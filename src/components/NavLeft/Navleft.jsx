@@ -27,13 +27,13 @@ export default class Navleft extends Component {
 
   render() {
     return (
-      <Col className="nav-left" span={4}>
+      <div>
         <div className="logo">
           <img src="/assets/cherrytree.png" alt="logo" />
           <h1>共享单车</h1>
         </div>
         <Menu theme="dark">{this.renderMenu(menuConfig)}</Menu>
-      </Col>
+      </div>
     );
   }
 }

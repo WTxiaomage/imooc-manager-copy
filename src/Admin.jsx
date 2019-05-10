@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Row, Col } from "antd";
 
 import NavLeft from "./components/NavLeft/Navleft";
+import Header from "./components/Header/Header";
 import "./Admin.css";
 
 export default class Admin extends Component {
@@ -10,9 +11,11 @@ export default class Admin extends Component {
     return (
       <div>
         <Row>
-          <NavLeft />
+          <Col className="nav-left" span={4}>
+            <NavLeft />
+          </Col>
           <Col className="main-content" span={20}>
-            main-content
+            <Header />
           </Col>
         </Row>
       </div>
