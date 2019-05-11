@@ -4,7 +4,10 @@ import { Row, Col } from "antd";
 
 import NavLeft from "./components/NavLeft/Navleft";
 import Header from "./components/Header/Header";
-import "./Admin.css";
+import Footer from "./components/Footer/Footer";
+import "./style/common.less";
+
+import Home from "./pages/Home/Home";
 
 export default class Admin extends Component {
   render() {
@@ -14,8 +17,12 @@ export default class Admin extends Component {
           <Col className="nav-left" span={4}>
             <NavLeft />
           </Col>
-          <Col className="main-content" span={20}>
+          <Col  span={20}>
             <Header />
+            <Row className="main-content">
+              <Home />
+            </Row>
+            <Footer />
           </Col>
         </Row>
       </div>

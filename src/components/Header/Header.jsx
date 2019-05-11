@@ -39,7 +39,7 @@ export default class Header extends Component {
   render() {
     const { sysTime, dayPictureUrl, weather } = this.state;
     return (
-      <Row>
+      <Row className="header">
         <Col span={24}>
           <div className="header-top">
             <span className="header-top-name">欢迎，微米前端</span>

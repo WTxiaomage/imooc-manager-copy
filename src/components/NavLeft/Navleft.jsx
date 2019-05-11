@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Menu, SubMenu } from "antd";
+import { Menu} from "antd";
 
 import menuConfig from "../../config/menuConfig";
 
