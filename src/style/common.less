@@ -1,8 +1,28 @@
 @import "./default.less";
 body{
+    overflow-y: hidden;
     min-width: 1200px;
     background: @colorL;
+    .container{
+        .main{
+            height: 100vh;
+            overflow: auto;
+            .main-content{
+                padding: 20px;
+                .base-card{
+                    margin: 20px 0;
+                    .base-button{
+                        margin: 10px;
+                    }
+                }
+             }
+        }
+    }
 }
-.main-content{
-   padding: 20px;
-}
+
+
+
+
+
+
+

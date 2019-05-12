@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Menu} from "antd";
+import { Link } from "react-router-dom";
+import { Menu } from "antd";
 
 import menuConfig from "../../config/menuConfig";
 
@@ -19,7 +20,7 @@ export default class Navleft extends Component {
       }
       return (
         <Item title={item.title} key={item.key}>
-          {item.title}
+          <Link to={item.key}>{item.title}</Link>
         </Item>
       );
     });
