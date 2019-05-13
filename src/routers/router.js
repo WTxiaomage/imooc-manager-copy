@@ -1,7 +1,6 @@
 import React from "react";
-import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
-import Login from "../pages/Login/Login";
 import Admin from "../pages/Admin/Admin";
 import Home from "../pages/Home/Home";
 import Buttons from "../pages/ui/Buttons";
@@ -12,6 +11,8 @@ import Messages from "../pages/ui/Messages";
 import Tabs from "../pages/ui/Tabs";
 import Gallery from "../pages/ui/Gallery";
 import Carousel from "../pages/ui/Carousel";
+import Login from "../pages/ui/Login";
+import FormRegister from "../pages/ui/FormRegister";
 
 import NoMatch from "../components/NoMatch/NoMatch";
 
@@ -22,7 +23,6 @@ export default class Router extends React.Component {
     return (
       <HashRouter>
         <Switch>
-          <Route path="/login" component={Login} />
           <Route
             path="/"
             render={() => (
@@ -33,10 +33,14 @@ export default class Router extends React.Component {
                   <Route path="/admin/ui/modals" component={Modals} />
                   <Route path="/admin/ui/loadings" component={Loadings} />
                   <Route path="/admin/ui/notification" component={Notification} />
+                  <Route path="/admin/ui/messages" component={Messages} />
                   <Route path="/admin/ui/tabs" component={Tabs} />
                   <Route path="/admin/ui/gallery" component={Gallery} />
                   <Route path="/admin/ui/carousel" component={Carousel} />
-                  <Redirect to="/admin/home"></Redirect>    
+                  <Route path="/admin/form/login" component={Login} />
+                  <Route path="/admin/form/reg" component={FormRegister} />
+                  <Route  component={NoMatch} />
+                  
                 </Switch>
               </Admin>
             )}
