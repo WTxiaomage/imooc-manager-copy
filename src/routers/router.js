@@ -13,6 +13,8 @@ import Gallery from "../pages/ui/Gallery";
 import Carousel from "../pages/ui/Carousel";
 import Login from "../pages/ui/Login";
 import FormRegister from "../pages/ui/FormRegister";
+import BaseTable from "../pages/ui/BaseTable";
+import HighTable from "../pages/ui/HighTable";
 
 import NoMatch from "../components/NoMatch/NoMatch";
 
@@ -39,8 +41,10 @@ export default class Router extends React.Component {
                   <Route path="/admin/ui/carousel" component={Carousel} />
                   <Route path="/admin/form/login" component={Login} />
                   <Route path="/admin/form/reg" component={FormRegister} />
+                  <Route path="/admin/table/basic" component={BaseTable} />
+                  <Route path="/admin/table/high" component={HighTable} />
+
                   <Route  component={NoMatch} />
-                  
                 </Switch>
               </Admin>
             )}
