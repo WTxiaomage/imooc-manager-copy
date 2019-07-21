@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {Card,Form, Icon, Input, Button, message, Checkbox} from 'antd'
-import './ui.less';
 const FormItem = Form.Item
  class Login extends Component {
 
@@ -33,7 +32,7 @@ const FormItem = Form.Item
             </Form>
         </Card>
         <Card title="登录水平表单" className="base-card">
-            <Form style={{width:600}} layout="inline">
+            <Form style={{width:400}} >
                 <FormItem>
                     {
                         getFieldDecorator("username",{

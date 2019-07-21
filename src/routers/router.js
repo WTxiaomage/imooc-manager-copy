@@ -11,8 +11,8 @@ import Messages from "../pages/ui/Messages";
 import Tabs from "../pages/ui/Tabs";
 import Gallery from "../pages/ui/Gallery";
 import Carousel from "../pages/ui/Carousel";
-import Login from "../pages/ui/Login";
-import FormRegister from "../pages/ui/FormRegister";
+import Login from "../pages/Form/Login";
+import FormRegister from "../pages/Form/FormRegister";
 import BaseTable from "../pages/ui/BaseTable";
 import HighTable from "../pages/ui/HighTable";
 
